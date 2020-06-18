@@ -1,4 +1,4 @@
-  * * June 17, 2020 * */
+// Menu driven program, that displays, uses , and manipulates arrays.
 #include <iostream>
 #include <iomanip>
 using namespace std;
