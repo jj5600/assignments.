@@ -1,0 +1,25 @@
+//accepts a string s1
+// then converts user input all to lower case and compares with acceptable cases
+// then returns the modified string
+// purpose is to negate failures that arise from inputs like "rEd" or "BluE"
+
+
+
+string stringmatch(string s1) 
+{ 
+    const string s2="blue";
+    const string s3="red";
+    const string s4="yellow";
+   transform(s1.begin(), s1.end(), s1.begin(), ::tolower);
+  
+   while(s1.compare(s2) != 0 && s1.compare(s3) != 0 && s1.compare(s4) !=0)
+   {    cout<<"**You did not input a valid color \n";
+        cout<<"Please input a valid color(yellow red blue) :";
+        cin>>s1;
+       transform(s1.begin(), s1.end(), s1.begin(), ::tolower);
+   }
+    
+    
+    return s1; 
+ 
+}
